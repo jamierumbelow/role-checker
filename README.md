@@ -10,8 +10,9 @@ It was built to explore the [permissions for Fei Protocol](https://docs.fei.mone
 
 1. Copy `.env.example` to `.env` and fill with relevant values.
 2. Run `yarn` to install dependencies
-3. Edit the "What are we looking at?" section of `src/index.ts`
-4. Run `yarn go` to fetch the roles from the event logs
+3. Symlink in the relevant contract ABIs (see the `import OptimisticTimelock from "../contracts/dao/OptimisticTimelock.sol/OptimisticTimelock.json";` line in `src/index.ts`)
+4. Edit the "What are we looking at?" section of `src/index.ts`
+5. Run `yarn go` to fetch the roles from the event logs
 
 ## How it works
 
